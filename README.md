@@ -6,7 +6,7 @@ HierachyJS allows you to get an HTML structure based on the data you give.
 
 1. Configure your sections
 2. Add content to sections and indicate each content importance in the section
-3. The library determine the best layout for each section of your content
+3. The library determine the best layout for each section of your content<br/>
 -> Your HTML structure is ready !
 
 ###License
