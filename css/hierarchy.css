@@ -1,0 +1,196 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.hierarchy {
+  margin:0;
+  padding:0;
+}
+
+.hierarchy header {
+  display: block;
+  background-color: #444444;
+  height: 30px;
+}
+.hierarchy header #main-menu {
+  list-style: none;
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.hierarchy header #main-menu li {
+  display: inline-block;
+  height: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 29px;
+  color: white;
+  text-align: center;
+  margin: 0 16px 0 0;
+}
+.hierarchy header #main-menu li .hierarchy-menu-link {
+  color: white;
+  cursor: pointer;
+  font: 9px arial, sans-serif;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hierarchy header #main-menu li .hierarchy-menu-link:hover {
+  text-decoration: none;
+  color: #ff6e00;
+}
+.hierarchy header #main-menu .menu-picto {
+  opacity: 0.2;
+}
+.hierarchy section {
+  width: 100%;
+  min-height: 100vh;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+}
+.hierarchy .flex-centered {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.hierarchy .align-left {
+  text-align: left !important;
+}
+.hierarchy .align-right {
+  text-align: right !important;
+}
+.hierarchy .align-justify-left {
+  text-align: justify;
+}
+.hierarchy .align-justify-right {
+  direction: rtl;
+  text-align: justify;
+}
+.hierarchy .float-left {
+  float: left !important;
+}
+.hierarchy .float-right {
+  float: right !important;
+}
+.hierarchy .margin-top-high {
+  margin-top: 30px !important;
+}
+.hierarchy .margin-top-med {
+  margin-top: 20px !important;
+}
+.hierarchy .margin-top-low {
+  margin-top: 10px !important;
+}
+.hierarchy .margin-bottom-high {
+  margin-bottom: 30px !important;
+}
+.hierarchy .margin-bottom-med {
+  margin-bottom: 20px !important;
+}
+.hierarchy .margin-bottom-bottom {
+  margin-bottom: 10px !important;
+}
+.hierarchy h1 {
+  display: block;
+  font: 26px arial, sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}
+.hierarchy h2 {
+  display: block;
+  font: 16px arial, sans-serif;
+  text-align: center;
+  color: #6b6b6b;
+  margin: 0;
+  padding: 0;
+}
+.hierarchy p {
+  display: block;
+  font: 12px arial, sans-serif;
+  color: #6b6b6b;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.hierarchy .hierarchy-3-img-container {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hierarchy .hierarchy-2-mixed-container {
+  width: 100%;
+  min-height: 50vh;
+  clear: both;
+  overflow: hidden;
+}
+.hierarchy .hierarchy-2-mixed-img {
+  width: 50%;
+  background-size: cover;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hierarchy .hierarchy-2-mixed-title {
+  margin: 0 2.5%;
+  width: 400px;
+  text-transform: uppercase;
+  font-family: arial, sans-serif;
+  font-weight:bold;
+}
+.hierarchy .hierarchy-2-img {
+  width: 100%;
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+.hierarchy .hierarchy-2-title {
+  width: 500px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: arial, sans-serif;
+  font-weight:bold;
+}
+.hierarchy .hierarchy-2-slider {
+  height: 40vh;
+  overflow: hidden;
+  border: none;
+}
+.hierarchy .bx-wrapper {
+  height: 40vh;
+  border: none;
+  box-shadow: none;
+}
+.hierarchy .hierarchy-1-text-injected-in-2-mixed {
+  margin: 0 2.5%;
+  width: 400px;
+}
+.hierarchy .hierarchy-1-text {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hierarchy File Example</title>
+    <link rel="stylesheet" href="../css/hierarchy.css" />
+</head>
+<body>
+
+<input id="file" type="file"/>
+
+<div class="hierarchy"></div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../src/jquery.hierarchy.js"></script>
+
+<script>
+
+    document.querySelector('#file').addEventListener('change', function() {
+
+        var hierarchy = new Hierarchy();
+        var data = [
+            {
+                name:'new section',
+                content:[
+                    {type:'image', data:this.files[0], priority:3},
+                    {type:'text', data:'Title one', priority:3},
+                    {type:'text', data:'Subtitle one', priority:2}
+                ]
+            }
+        ];
+
+        hierarchy.getHTML(data, {
+            addTags:true,
+            useFileAPI:true,
+        }).then(function(html){
+
+            // do what you want with html here
+            $('input').hide();
+            $('.hierarchy').append(html);
+
+        });
+
+    }, false);
+    ;
+
+</script>
+
+</body>
+</html>
