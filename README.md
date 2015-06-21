@@ -5,10 +5,9 @@
 HierachyJS allows you to get an HTML structure based on the data you give.
 
 1. Configure your sections
-2. Add content to sections and indicate his level of importance in the section
-3. Give it to HierarchyJS
-4. The library determine the best layout for each section of your content (depending on the number of content and the level of importance you gave to each content)
-5. Your HTML structure is ready !
+2. Add content to sections and indicate each content importance in the section
+3. The library determine the best layout for each section of your content
+-> Your HTML structure is ready !
 
 ###License
 Released under the MIT license - http://opensource.org/licenses/MIT
@@ -26,7 +25,7 @@ jQuery needs to be included before HierarchyJS :
 <script src="/scripts/jquery.hierarchy.min.js"></script>
 ```
 
-Hierarchy add classes to the html tags.
+Hierarchy add classes to the html tags.<br/>
 You can include the css file to get a default formatted layout or you can write your own css :
 
 ```html
@@ -41,7 +40,7 @@ All your sections and contents must be regrouped in a general array of object as
 ```javascript
     var data = [
         {
-            name:'new section', //
+            name:'new section',
             content:[
                 {type:'image', data:'images/img.jpg', priority:3},
                 {type:'text', data:'title', priority:3},
@@ -50,7 +49,7 @@ All your sections and contents must be regrouped in a general array of object as
     ];
 ```
 
-Note that each object in the global array represents a <section> in the HTML output.
+Note that each object in the global array represents a section in the HTML output.<br/>
 Moreover, each object in the content array represents a content for the concerned section.
 
 Find more details on the object below.
@@ -79,16 +78,16 @@ Call the constructor then call the getHTML method with data and options :
 
 ### Sections
 
-Each object of the general data array will ouput <section> open / close tags with each content included
+Each object of the general data array will ouput section open / close tags with each content included
 
-**name** {string} - Name of the section
-**content** {array} - Array with object for each content
+**name** {string} - name of the section<br/>
+**content** {array} - array with object for each content<br/>
 
 ### Contents
 
 Each object represents a content
 
-**type** {string} - Type of the content
+**type** {string} - type of the content
 
 This can be an image :
 
@@ -104,7 +103,7 @@ or a text :
 
 Other types of content like audio or video are not yet supported.
 
-**data** {string} - The content
+**data** {string} - the content
 
 If type is string, data must be a string :
 
@@ -131,28 +130,29 @@ Or HTML5 File Object (useFileAPI option must be set to true, see below) :
     data:{}
 ```
 
-You can use an input type="file" to generate HTML5 File Object (see examples examples below).
+You can use an input type="file" to generate HTML5 File Object (see examples folder).
 
-**priority** {integer} - Importance of the content
+**priority** {integer} - importance of the content
 
-Priority will determine the order of your content in the HTML output.
+Must be between **1** and **3** (3 as the most important).
 
-She Must be between **1** and **3** (3 as the most important).
+This will basically determine the order of your content in the HTML output.
+
 
 ## Options
 
-**addTags** {boolean}
-default: false
+**addTags** {boolean}<br/>
+**default:** false<br/>
 If set to true the HTML output will contain doctype and head tags.
 
-**addMenu** {boolean}
-default: true
-If set to true a header menu will be generated with link to each sections.
+**addMenu** {boolean}<br/>
+**default:** true<br/>
+If set to true a header menu will be generated with link to each sections.<br/>
 **Note** : The menu appears when you have 2 or more sections.
 
-**useFileAPI** {boolean}
-default: false
-If set to true you will be able to use HTML5 File API to upload images from an input type file.
+**useFileAPI** {boolean}<br/>
+**default:** false<br/>
+If set to true you will be able to use HTML5 File API to upload images from an input type file.<br/>
 **Note** : The getHTML() method returns now a promise as following :
 
 ```javascript
