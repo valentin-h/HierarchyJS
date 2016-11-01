@@ -1,6 +1,6 @@
 #HierarchyJS 0.1
 
-##A content-based javascript library that generate HTML
+##A content-based javascript library that generates HTML
 
 HierachyJS allows you to get an HTML structure based on the data you give.
 
